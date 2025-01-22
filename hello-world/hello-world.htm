@@ -1,17 +1,57 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            body {
+                text-align: center;
+            }
+            h1 {
+                font-size: 130px;
+            }
+            .info {
+                font-size: 50px;
+                color: black;
+            }
+        </style>
+        <title>
+            Hello World \nAlfredo Servin \nCIS-023-101: Javascript Programming
+        </title>
+    </head>
     <body>
-        <h1>Hello World</h1>
-        <p>Click the button to display hello world</p>
-        <!-- This is an HTML commet -->
+        <h1>
+            <span style="color: red">H</span>
+            <span style="color: orange">e</span>
+            <span style="color: rgb(174, 174, 3)">l</span>
+            <span style="color: green">l</span>
+            <span style="color: blue">o</span>
+            <span style="color: indigo"> </span>
+            <span style="color: violet">W</span>
+            <span style="color: red">o</span>
+            <span style="color: orange">r</span>
+            <span style="color: yellow">l</span>
+            <span style="color: green">d</span>
+        </h1>
+        <p class="info">Alfredo Servin</p>
+        <p class="info">CIS-023-101: Javascript Programming</p>
+        <p>Click the buttons to display messages</p>
         <button onclick="hello()">Hello World</button>
+        <button onclick="pressMe()">Press Me</button>
+        <button onclick="goodbye()">Goodbye</button>
+        <button onclick="exit()">Exit</button>
         <script>
             // Function to display hello world
-            /*
-             * This is a multi-line comment
-             */
             function hello() {
-                alert('Hello world!');
-                console.log('Hello World');
+                alert('Hello World');
+            }
+            function pressMe() {
+                alert('You pressed the button!');
+            }
+            function goodbye() {
+                alert('Goodbye!');
+            }
+            function exit() {
+                window.open('', '_self', '');
+                window.close();
             }
         </script>
     </body>
