@@ -34,10 +34,10 @@
         <p class="info">Alfredo Servin</p>
         <p class="info">CIS-023-101: Javascript Programming</p>
         <p>Click the buttons to display messages</p>
-        <button onclick="hello()  ">Hello World</button>
-        <button onclick="pressMe()   ">Press Me</button>
-        <button onclick="goodbye()    ">Goodbye</button>
-        <button onclick="exit()          ">Exit</button>
+        <button onclick="hello()">Hello World</button>
+        <button onclick="pressMe()">Press Me</button>
+        <button onclick="goodbye()">Goodbye</button>
+        <button onclick="exit()">Exit</button>
         <script>
             // Function to display hello world
             function hello() {
@@ -50,8 +50,10 @@
                 alert('Goodbye!');
             }
             function exit() {
-                window.open('', '_self', '');
-                window.close();
+                window.location.href = 'about:blank';
+                setTimeout(function () {
+                    window.close();
+                }, 100);
             }
         </script>
     </body>
